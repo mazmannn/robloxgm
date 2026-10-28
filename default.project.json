@@ -1,0 +1,23 @@
+{
+  "name": "MythicPets",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "GameServer": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "GameClient": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}

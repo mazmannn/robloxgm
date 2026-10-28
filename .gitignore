@@ -1,0 +1,10 @@
+# Downloaded tools
+/download/
+
+# Generated Rojo files
+/rojo-check.rbxl
+/sourcemap.json
+
+# Roblox Studio lock files
+*.rbxl.lock
+*.rbxlx.lock
