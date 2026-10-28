@@ -10,6 +10,8 @@ try {
     }
     & $lunePath run tests/profile-store.spec.luau
     if ($LASTEXITCODE -ne 0) { throw 'Profile tests failed' }
+    & $lunePath run tests/mining.spec.luau
+    if ($LASTEXITCODE -ne 0) { throw 'Mining tests failed' }
     rojo build default.project.json -o rojo-check.rbxl
     if ($LASTEXITCODE -ne 0) { throw 'Rojo build failed' }
     & $lunePath run tools/check-build.luau

@@ -58,6 +58,15 @@ function ProfileStore:open(userId)
     return true
 end
 
+-- Internal server API; never exposed as a remote action.
+function ProfileStore:awardCrystals(userId, amount)
+    local entry = self.entries[userId]
+    if not entry or type(amount) ~= "number" or amount ~= amount or amount <= 0
+        or amount == math.huge or amount % 1 ~= 0 then return false end
+    entry.profile.Resources.Crystals += amount
+    return true
+end
+
 function ProfileStore:close(userId)
     local entry = self.entries[userId]
     if entry then

@@ -6,9 +6,11 @@ if not network then
 end
 local request = network:WaitForChild("Request")
 local response = network:WaitForChild("Response")
+local updateView = require(script.Parent:WaitForChild("MiningView")).start(request)
 local receivedState = false
 local currentState = nil
 response.OnClientEvent:Connect(function(result)
+    updateView(result)
     if result.ok and result.state then
         currentState = result.state
         receivedState = true
