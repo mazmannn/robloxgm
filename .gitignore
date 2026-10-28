@@ -5,6 +5,10 @@
 /rojo-check.rbxl
 /sourcemap.json
 
+# Compatibility test places (not project sources)
+/Place2.rbxl
+/Place2-rojo-test.rbxl
+
 # Roblox Studio lock files
 *.rbxl.lock
 *.rbxlx.lock
