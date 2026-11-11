@@ -1,0 +1,17 @@
+[
+  {
+    "file": "MossCompanion/MossCompanion.obj",
+    "triangles": 7056,
+    "groups": 12
+  },
+  {
+    "file": "CopperOutcrop/CopperOutcrop.obj",
+    "triangles": 616,
+    "groups": 17
+  },
+  {
+    "file": "Penkun/Penkun.obj",
+    "triangles": 3328,
+    "groups": 31
+  }
+]

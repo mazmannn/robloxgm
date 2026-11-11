@@ -1,0 +1,20 @@
+[
+  {
+    "name": "MossCompanion",
+    "meshes": 74,
+    "materials": 8,
+    "blend": "MossCompanion/MossCompanion.blend"
+  },
+  {
+    "name": "Penkun",
+    "meshes": 41,
+    "materials": 9,
+    "blend": "Penkun/Penkun.blend"
+  },
+  {
+    "name": "CopperOutcrop",
+    "meshes": 17,
+    "materials": 4,
+    "blend": "CopperOutcrop/CopperOutcrop.blend"
+  }
+]

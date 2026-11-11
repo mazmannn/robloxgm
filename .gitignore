@@ -12,3 +12,11 @@
 # Roblox Studio lock files
 *.rbxl.lock
 *.rbxlx.lock
+
+# Python bytecode and Blender backups
+__pycache__/
+*.pyc
+*.blend1
+
+# Local asset build logs
+/assets/meshes/*.log

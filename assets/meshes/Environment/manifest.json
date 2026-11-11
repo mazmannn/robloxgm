@@ -1,0 +1,192 @@
+[
+  {
+    "name": "WayfarerTree",
+    "mesh_objects": 51,
+    "size": [
+      18.99,
+      17.94,
+      18.71
+    ],
+    "blend": "WayfarerTree/WayfarerTree.blend"
+  },
+  {
+    "name": "Pine",
+    "mesh_objects": 5,
+    "size": [
+      7.02,
+      6.84,
+      14.4
+    ],
+    "blend": "Pine/Pine.blend"
+  },
+  {
+    "name": "BroadleafTree",
+    "mesh_objects": 14,
+    "size": [
+      12.16,
+      10.51,
+      13.38
+    ],
+    "blend": "BroadleafTree/BroadleafTree.blend"
+  },
+  {
+    "name": "Lantern",
+    "mesh_objects": 9,
+    "size": [
+      2.27,
+      1.4,
+      6.0
+    ],
+    "blend": "Lantern/Lantern.blend"
+  },
+  {
+    "name": "Fence",
+    "mesh_objects": 4,
+    "size": [
+      6.55,
+      0.55,
+      3.4
+    ],
+    "blend": "Fence/Fence.blend"
+  },
+  {
+    "name": "Paving",
+    "mesh_objects": 9,
+    "size": [
+      5.89,
+      5.38,
+      0.3
+    ],
+    "blend": "Paving/Paving.blend"
+  },
+  {
+    "name": "Bridge",
+    "mesh_objects": 27,
+    "size": [
+      6.4,
+      14.88,
+      3.6
+    ],
+    "blend": "Bridge/Bridge.blend"
+  },
+  {
+    "name": "RockCluster1",
+    "mesh_objects": 4,
+    "size": [
+      7.21,
+      6.01,
+      7.11
+    ],
+    "blend": "RockCluster1/RockCluster1.blend"
+  },
+  {
+    "name": "RockCluster2",
+    "mesh_objects": 4,
+    "size": [
+      8.46,
+      6.74,
+      7.45
+    ],
+    "blend": "RockCluster2/RockCluster2.blend"
+  },
+  {
+    "name": "RockCluster3",
+    "mesh_objects": 4,
+    "size": [
+      6.43,
+      6.68,
+      7.42
+    ],
+    "blend": "RockCluster3/RockCluster3.blend"
+  },
+  {
+    "name": "HouseBrown",
+    "mesh_objects": 108,
+    "size": [
+      11.02,
+      11.0,
+      10.79
+    ],
+    "blend": "HouseBrown/HouseBrown.blend"
+  },
+  {
+    "name": "HouseRed",
+    "mesh_objects": 108,
+    "size": [
+      11.02,
+      11.0,
+      10.79
+    ],
+    "blend": "HouseRed/HouseRed.blend"
+  },
+  {
+    "name": "HouseBlue",
+    "mesh_objects": 108,
+    "size": [
+      11.02,
+      11.0,
+      10.79
+    ],
+    "blend": "HouseBlue/HouseBlue.blend"
+  },
+  {
+    "name": "HouseGreen",
+    "mesh_objects": 108,
+    "size": [
+      11.02,
+      11.0,
+      10.79
+    ],
+    "blend": "HouseGreen/HouseGreen.blend"
+  },
+  {
+    "name": "Forge",
+    "mesh_objects": 113,
+    "size": [
+      12.41,
+      11.0,
+      10.79
+    ],
+    "blend": "Forge/Forge.blend"
+  },
+  {
+    "name": "Alchemist",
+    "mesh_objects": 113,
+    "size": [
+      12.61,
+      11.0,
+      10.79
+    ],
+    "blend": "Alchemist/Alchemist.blend"
+  },
+  {
+    "name": "PetKeeper",
+    "mesh_objects": 124,
+    "size": [
+      11.02,
+      13.79,
+      10.79
+    ],
+    "blend": "PetKeeper/PetKeeper.blend"
+  },
+  {
+    "name": "ResourceStall",
+    "mesh_objects": 14,
+    "size": [
+      6.4,
+      3.48,
+      5.62
+    ],
+    "blend": "ResourceStall/ResourceStall.blend"
+  },
+  {
+    "name": "BiomeGate",
+    "mesh_objects": 40,
+    "size": [
+      26.4,
+      10.85,
+      24.6
+    ],
+    "blend": "BiomeGate/BiomeGate.blend"
+  }
+]

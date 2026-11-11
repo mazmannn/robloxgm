@@ -1,0 +1,97 @@
+[
+  {
+    "name": "WayfarerTree",
+    "meshes": 51,
+    "triangles": 1372
+  },
+  {
+    "name": "Pine",
+    "meshes": 5,
+    "triangles": 124
+  },
+  {
+    "name": "BroadleafTree",
+    "meshes": 14,
+    "triangles": 660
+  },
+  {
+    "name": "Lantern",
+    "meshes": 9,
+    "triangles": 108
+  },
+  {
+    "name": "Fence",
+    "meshes": 4,
+    "triangles": 112
+  },
+  {
+    "name": "Paving",
+    "meshes": 9,
+    "triangles": 160
+  },
+  {
+    "name": "Bridge",
+    "meshes": 27,
+    "triangles": 804
+  },
+  {
+    "name": "RockCluster1",
+    "meshes": 4,
+    "triangles": 320
+  },
+  {
+    "name": "RockCluster2",
+    "meshes": 4,
+    "triangles": 320
+  },
+  {
+    "name": "RockCluster3",
+    "meshes": 4,
+    "triangles": 320
+  },
+  {
+    "name": "HouseBrown",
+    "meshes": 108,
+    "triangles": 3664
+  },
+  {
+    "name": "HouseRed",
+    "meshes": 108,
+    "triangles": 3664
+  },
+  {
+    "name": "HouseBlue",
+    "meshes": 108,
+    "triangles": 3664
+  },
+  {
+    "name": "HouseGreen",
+    "meshes": 108,
+    "triangles": 3664
+  },
+  {
+    "name": "Forge",
+    "meshes": 113,
+    "triangles": 3872
+  },
+  {
+    "name": "Alchemist",
+    "meshes": 113,
+    "triangles": 3836
+  },
+  {
+    "name": "PetKeeper",
+    "meshes": 124,
+    "triangles": 4048
+  },
+  {
+    "name": "ResourceStall",
+    "meshes": 14,
+    "triangles": 296
+  },
+  {
+    "name": "BiomeGate",
+    "meshes": 40,
+    "triangles": 1044
+  }
+]

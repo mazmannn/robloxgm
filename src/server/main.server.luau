@@ -7,10 +7,15 @@ local store = ProfileStore.new(Config, function() return HttpService:GenerateGUI
 local MiningConfig = require(ReplicatedStorage.Shared:WaitForChild("MiningConfig"))
 local MiningService = require(script.Parent:WaitForChild("MiningService"))
 local mining = MiningService.new(MiningConfig, function(uid, amount) return store:awardCrystals(uid, amount) end)
+local WorldService=require(script.Parent.WorldService)
+local CombatConfig=require(ReplicatedStorage.Shared.CombatConfig)
+local world
+require(script.Parent.SceneBuilder).build(workspace,game:GetService("Lighting"))
 local function decorate(uid, result)
     if result.state then
         result.state.mining = mining:snapshot(uid)
         result.state.session.Task = if result.state.mining and result.state.mining.targetId then "Mining" else "Idle"
+        if world then world:decorate(uid,result.state) end
     end
     return result
 end
@@ -30,6 +35,7 @@ for id,node in MiningConfig.Nodes do
     if hit then node.y=hit.Position.Y end
     network:SetAttribute(id.."_Y",node.y)
 end
+world=WorldService.new(CombatConfig,store,mining,network)
 local request = Instance.new("RemoteEvent")
 request.Name = "Request"
 request.Parent = network
@@ -41,9 +47,12 @@ request.OnServerEvent:Connect(function(player, payload)
     -- Player comes from Roblox, never from a client-controlled userId.
     local now=os.clock()
     local selectRequest=type(payload)=="table" and payload.action=="SelectTarget"
+    local worldRequest=type(payload)=="table" and world:isAction(payload.action)
     -- Reuse the profile gate for per-player rate limiting before validating a target.
-    local result = store:handle(player.UserId, if selectRequest then {action="GetState"} else payload, now)
-    if result.ok and selectRequest then
+    local result = store:handle(player.UserId, if selectRequest or worldRequest then {action="GetState"} else payload, now)
+    if result.ok and worldRequest then
+        result=world:handle(player,payload,now,result)
+    elseif result.ok and selectRequest then
         local valid=type(payload.nodeId)=="string" and #payload.nodeId<=64
         local count=0
         for key in payload do
@@ -52,11 +61,16 @@ request.OnServerEvent:Connect(function(player, payload)
         end
         if not valid then result={ok=false,code="InvalidRequest"}
         else
-            local ok,code=mining:select(player.UserId,payload.nodeId,now,distance(player,payload.nodeId),#result.state.profile.EquippedPetIds>0)
+            local ok,code=mining:select(player.UserId,payload.nodeId,now,distance(player,payload.nodeId),world:hasTeam(player.UserId))
+            if ok then
+                world:recall(player.UserId)
+                world.merchant:close(player.UserId)
+            end
             result=if ok then result else {ok=false,code=code}
         end
     elseif result.ok and (payload.action=="RecallTeam" or payload.action=="UnequipPet" or payload.action=="EquipPet") then
         mining:recall(player.UserId)
+        world:recall(player.UserId)
     end
     decorate(player.UserId,result)
     -- Silence floods rather than echoing every rejected packet.
@@ -69,8 +83,11 @@ local function added(player)
     local ok, reason = store:open(player.UserId)
     if ok then
         mining:open(player.UserId)
+        world:open(player.UserId)
         player.CharacterRemoving:Connect(function()
             mining:recall(player.UserId)
+            world:recall(player.UserId)
+            world.merchant:close(player.UserId)
             if player.Parent==Players then
                 response:FireClient(player,decorate(player.UserId,{ok=true,code="OK",state=store:snapshot(player.UserId)}))
             end
@@ -82,7 +99,7 @@ local function added(player)
     end
 end
 Players.PlayerAdded:Connect(added)
-Players.PlayerRemoving:Connect(function(player) mining:close(player.UserId); store:close(player.UserId) end)
+Players.PlayerRemoving:Connect(function(player) world:close(player.UserId); mining:close(player.UserId); store:close(player.UserId) end)
 for _, player in Players:GetPlayers() do added(player) end
 -- Publish only after handlers and current player profiles are ready.
 network.Parent = ReplicatedStorage
@@ -92,7 +109,11 @@ task.spawn(function()
         for _,player in Players:GetPlayers() do
             local s=store:snapshot(player.UserId)
             local m=mining:snapshot(player.UserId)
-            if s and m and mining:tick(player.UserId,os.clock(),distance(player,m.targetId),#s.profile.EquippedPetIds>0) then
+            local changed=world:tick(player,os.clock())
+            if s and m then
+                changed=mining:tick(player.UserId,os.clock(),distance(player,m.targetId),world:hasTeam(player.UserId)) or changed
+            end
+            if s and changed then
                 response:FireClient(player,decorate(player.UserId,{ok=true,code="OK",state=store:snapshot(player.UserId)}))
             end
         end

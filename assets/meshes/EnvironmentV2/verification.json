@@ -1,0 +1,329 @@
+{
+  "verified_assets": 19,
+  "checks": [
+    {
+      "name": "WayfarerTree",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 184,
+      "triangles": 2966,
+      "size": [
+        18.05883026123047,
+        17.09244441986084,
+        15.991638422012329
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "BiomeGate",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 111,
+      "triangles": 3936,
+      "size": [
+        23.000001907348633,
+        10.100000143051147,
+        18.39999771118164
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Pine",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 5,
+      "triangles": 196,
+      "size": [
+        6.788924217224121,
+        6.8936543464660645,
+        13.971111502498388
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "BroadleafTree",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 42,
+      "triangles": 932,
+      "size": [
+        9.229207992553711,
+        8.945833683013916,
+        10.232969962060452
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Lantern",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 14,
+      "triangles": 452,
+      "size": [
+        2.6000002026557922,
+        1.1000001430511475,
+        6.403529167175293
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Fence",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 10,
+      "triangles": 312,
+      "size": [
+        7.699999809265137,
+        0.75,
+        3.4499998092651367
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Bridge",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 51,
+      "triangles": 2244,
+      "size": [
+        7.150000095367432,
+        17.039884567260742,
+        4.659999847412109
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "RockCluster1",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 12,
+      "triangles": 194,
+      "size": [
+        8.02287244796753,
+        6.532925367355347,
+        7.6807169914245605
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "RockCluster2",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 12,
+      "triangles": 194,
+      "size": [
+        8.103630542755127,
+        6.713159084320068,
+        7.670387268066406
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "RockCluster3",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 12,
+      "triangles": 194,
+      "size": [
+        7.954336166381836,
+        7.145616769790649,
+        6.909458637237549
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "HouseBrown",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 186,
+      "triangles": 5810,
+      "size": [
+        11.514999866485596,
+        9.900000095367432,
+        10.504999160766602
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "HouseRed",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 157,
+      "triangles": 4406,
+      "size": [
+        10.039881706237793,
+        9.900000095367432,
+        11.679999947547913
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "HouseBlue",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 222,
+      "triangles": 5784,
+      "size": [
+        11.739882469177246,
+        11.899999618530273,
+        10.404999732971191
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "HouseGreen",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 167,
+      "triangles": 4694,
+      "size": [
+        10.63988208770752,
+        9.5,
+        9.779999375343323
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Forge",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 214,
+      "triangles": 6910,
+      "size": [
+        14.865000247955322,
+        9.90000057220459,
+        12.613499537110329
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Alchemist",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 213,
+      "triangles": 6962,
+      "size": [
+        12.915000438690186,
+        11.399999618530273,
+        9.880001068115234
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "PetKeeper",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 182,
+      "triangles": 5142,
+      "size": [
+        11.63988208770752,
+        8.18999981880188,
+        8.780000686645508
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "ResourceStall",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 233,
+      "triangles": 8560,
+      "size": [
+        12.065000057220459,
+        6.949999809265137,
+        7.368999898433685
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Paving",
+      "blend_reopened": true,
+      "glb_imported": true,
+      "native_meshes": 16,
+      "triangles": 448,
+      "size": [
+        8.950000286102295,
+        6.679999828338623,
+        0.23999999463558197
+      ],
+      "export_bounds_match": true,
+      "render_size": [
+        800,
+        800
+      ]
+    }
+  ],
+  "roblox_import_tested": false
+}

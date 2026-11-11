@@ -12,6 +12,12 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Profile tests failed' }
     & $lunePath run tests/mining.spec.luau
     if ($LASTEXITCODE -ne 0) { throw 'Mining tests failed' }
+    & $lunePath run tests/touch.spec.luau
+    if ($LASTEXITCODE -ne 0) { throw 'Touch regression failed' }
+    & $lunePath run tests/combat.spec.luau
+    if ($LASTEXITCODE -ne 0) { throw 'Combat/merchant tests failed' }
+    & $lunePath run tests/scene.spec.luau
+    if ($LASTEXITCODE -ne 0) { throw 'Reference scene checks failed' }
     rojo build default.project.json -o rojo-check.rbxl
     if ($LASTEXITCODE -ne 0) { throw 'Rojo build failed' }
     & $lunePath run tools/check-build.luau

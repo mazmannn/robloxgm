@@ -2,6 +2,9 @@
 
 Roblox-проект на Luau с синхронизацией кода через Rojo.
 
+Визуальные правила проекта и виды ресурсов: [docs/visual-direction.md](docs/visual-direction.md).
+Шаблон генерации референсов: [docs/reference-prompt-template.md](docs/reference-prompt-template.md).
+
 ## Требования
 
 - Roblox Studio с плагином Rojo 7.7.1.
